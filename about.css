@@ -1,0 +1,302 @@
+#container:before {
+    content: '';
+    background-image: url(noghtechine-back.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#container div {
+    z-index: 66;
+}
+
+#container .title {
+    width: 35%;
+    margin-top: 20px;
+    position: relative;
+    margin-right: 182px;
+}
+
+#container .title:before {
+    content: '';
+    position: absolute;
+    background-image: url(logo.png);
+    width: 171px;
+    height: 254px;
+    right: -133px;
+    background-repeat: no-repeat;
+    top: -20px;
+    z-index: -1;
+    background-size: 85%;
+}
+
+#container .btop-1 {
+    width: 25%;
+}
+
+#container .btop-2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5px;
+}
+
+#container .btop-2 a {
+    width: 35%;
+    cursor: pointer;
+}
+
+#container .btop-3 {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+#container .btop-3 a {
+    width: 22%;
+    cursor: pointer;
+}
+
+#container .btop-4 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: flex-end;
+}
+
+#container .btop-4 .c-part {
+    position: relative;
+    height: 100%;
+    width: 4%;
+}
+
+#container .btop-4 .c-part:before {
+    content: '';
+    position: absolute;
+    background-image: url(gushi.png);
+    width: 425px;
+    height: 660px;
+    top: -60px;
+    right: -231px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#container .btop-4 a {
+    width: 31%;
+}
+
+#footer {
+    z-index: 9999999999;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.btop-2 a:hover, .btop-3 a:hover, .btop-4 .c-part:hover {
+    animation: shake 2s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@-webkit-keyframes spaceboots {
+    0% {
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+    }
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        -webkit-transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        -webkit-transform: translate(0px, 2px) rotate(0deg);
+    }
+    40% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        -webkit-transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+    }
+    80% {
+        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        -webkit-transform: translate(2px, 2px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+{
+    -webkit-animation-name: spaceboots
+;
+    -webkit-animation-duration: 2s
+;
+    -webkit-transform-origin: 50% 50%
+;
+    -webkit-animation-iteration-count: infinite
+;
+    -webkit-animation-timing-function: linear
+;
+}
+.text-item {
+    background-color: #ae0000;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    font-size: 11px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 35px;
+    height: 35px;
+    margin-bottom: 7px;
+}
+
+.none {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .text-item {
+        font-size: 9px;
+    }
+
+    #container .btop-4 .c-part:before {
+        width: 307px;
+        height: 629px;
+        top: -60px;
+        right: -168px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container .btop-4 .c-part:before {
+        width: 244px;
+        height: 655px;
+        top: -28px;
+        right: -130px;
+    }
+}
+
+@media screen and (max-width: 694.98px) {
+    #container .btop-4 .c-part:before {
+        width: 232px;
+        height: 707px;
+        top: -21px;
+        right: -129px;
+    }
+
+    #container .title {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 25px;
+        margin-right: auto;
+    }
+
+    #container .title:before {
+        display: none;
+    }
+
+    .text-item {
+        width: 100% !important;
+        font-size: 15px !important;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    #container {
+        height: auto;
+    }
+
+    #container .btop-4 {
+        width: 100%;
+    }
+
+    #footer {
+        position: relative;
+    }
+
+    .res-none {
+        display: none;
+    }
+
+    .res-block {
+        display: flex;
+    }
+
+    .btop-1 img {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    #container .btop-2, #container .btop-3 {
+        justify-content: space-around;
+        flex-direction: column;
+        width: 60%;
+
+    }
+
+    #container:before {
+        background-image: url("noghte-chin.png");
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #container .btop-2, #container .btop-3 {
+        justify-content: space-around;
+        flex-direction: column;
+        width: 85%;
+
+    }
+
+    .btop-1 img {
+        width: 85%;
+        margin: 0 auto;
+    }
+}

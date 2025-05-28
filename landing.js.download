@@ -1,0 +1,8 @@
+function checkWindowSize() {
+    if ($(window).width() < 751) {
+        $('#main').height($(window).width() * 0.7)
+    }
+}
+
+$(document).ready(checkWindowSize);
+$(window).resize(checkWindowSize);

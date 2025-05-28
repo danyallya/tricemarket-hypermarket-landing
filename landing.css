@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'IranSans';
+    src: url('../fonts/sans.ttf') format('truetype');
+}
+
+body {
+    font-family: "IranSans", "BYekan", Tahoma, sans-serif !important;
+    width: 100%;
+    direction: rtl;
+    text-align: center;
+    margin: 0 auto;
+    color: #222c31;
+
+    background-color: #ffffff;
+
+}
+
+body, ol, table, ul {
+    margin: 0;
+    padding: 0
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.col, .full-width, .wrap {
+    width: 100%
+}
+
+html {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+a {
+    text-decoration: none !important;
+    color: #333;
+}
+
+body {
+    background: url(../images/landing/back-shadow.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+#container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+#main {
+    width: 642px;
+    height: 535px;
+    position: absolute;
+    margin: -150px auto 0;
+}
+
+.logo {
+    width: 51%;
+    position: absolute;
+    /* height: 125px; */
+    left: 14%;
+    top: 9%;
+}
+
+.logo img.img {
+    width: 100%;
+}
+
+.phone-img {
+    position: absolute;
+    right: 14%;
+    top: 9%;
+    width: 39%;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    z-index: 2;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.items {
+    position: absolute;
+    z-index: 1;
+    top: 36%;
+    width: 41%;
+    height: 79%;
+    left: 25%;
+}
+
+.items a {
+    margin-bottom: 15px;
+    display: block;
+    height: 13%;
+}
+
+.items img {
+    display: block;
+    width: auto;
+    height: 100%;
+    transition: .3s all;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.items img:hover {
+    box-shadow: 1px 1px 4px 2px rgba(45, 45, 45, 0.55);
+    margin-right: 10px;
+}
+
+#link-web-app {
+    margin-right: 20%;
+}
+
+#link-web-app:hover {
+    margin-right: calc(20% + 10px);
+}
+
+#link-android {
+    margin-right: 23%;
+}
+
+#link-android:hover {
+    margin-right: calc(23% + 10px);
+}
+
+#link-web-app-help {
+    margin-right: 24%;
+}
+
+#link-web-app-help:hover {
+    margin-right: calc(24% + 10px);
+}
+
+.shoar {
+    width: 40%;
+    bottom: -9%;
+    height: 9%;
+    position: absolute;
+    right: 30%;
+    margin: 0 auto;
+}
+
+#footer {
+    background-color: #313131;
+    width: 100%;
+    height: 100px;
+    margin-top: 54px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .footer-links {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+}
+
+#footer .footer-links a {
+    color: #ffffff;
+    display: block;
+    font-family: "IranSans", "BYekan", Tahoma, sans-serif !important;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+
+#footer .imagephone {
+    display: inline;
+    width: auto !important;
+    height: 40px;
+    margin: 0 40px;
+}
+
+#footer .ec-image {
+    display: inline;
+    height: 61px;
+    width: auto !important;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    padding: 7px;
+    margin: 5px;
+    transition: .3s all;
+}
+
+
+#footer .ec-image:hover {
+    box-shadow: 0px 0px 7px 2px rgba(255, 255, 255, 0.2);
+}
+
+.in-f {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 700px) {
+
+    #footer .footer-links {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    #footer .imagephone {
+        margin: 0 15px;
+        height: 30px;
+    }
+
+    .items img {
+    }
+
+    body {
+        background: url(../images/landing/back-shadow-mobile.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #main {
+        width: 90%;
+        height: auto;
+    }
+
+    .shoar {
+        bottom: -15%;
+    }
+
+    .items {
+        left: 26%;
+    }
+
+    .items a {
+        margin-bottom: 8px;
+        height: 15%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #footer .footer-links {
+        width: 70px;
+        font-size: 10px;
+    }
+
+    #footer .imagephone {
+        margin: 0 5px;
+        height: 25px;
+    }
+
+    #footer .ec-image {
+        height: 50px;
+        padding: 5px;
+    }
+}
